@@ -1,0 +1,18 @@
+C:\Users\GamerD\Documents\Visual Studio 2012\Projects\Maximized Tamil Bible\Maximized Tamil Bible\bin\Debug\Maximized Tamil Bible v3.0.exe.config
+C:\Users\GamerD\Documents\Visual Studio 2012\Projects\Maximized Tamil Bible\Maximized Tamil Bible\bin\Debug\Maximized Tamil Bible v3.0.exe.manifest
+C:\Users\GamerD\Documents\Visual Studio 2012\Projects\Maximized Tamil Bible\Maximized Tamil Bible\bin\Debug\Maximized Tamil Bible v3.0.application
+C:\Users\GamerD\Documents\Visual Studio 2012\Projects\Maximized Tamil Bible\Maximized Tamil Bible\bin\Debug\Maximized Tamil Bible v3.0.exe
+C:\Users\GamerD\Documents\Visual Studio 2012\Projects\Maximized Tamil Bible\Maximized Tamil Bible\bin\Debug\Maximized Tamil Bible v3.0.pdb
+C:\Users\GamerD\Documents\Visual Studio 2012\Projects\Maximized Tamil Bible\Maximized Tamil Bible\bin\Debug\Maximized Tamil Bible v3.0.xml
+C:\Users\GamerD\Documents\Visual Studio 2012\Projects\Maximized Tamil Bible\Maximized Tamil Bible\obj\Debug\MTB3.FormController.resources
+C:\Users\GamerD\Documents\Visual Studio 2012\Projects\Maximized Tamil Bible\Maximized Tamil Bible\obj\Debug\MTB3.FormDisplay.resources
+C:\Users\GamerD\Documents\Visual Studio 2012\Projects\Maximized Tamil Bible\Maximized Tamil Bible\obj\Debug\MTB3.Resources.resources
+C:\Users\GamerD\Documents\Visual Studio 2012\Projects\Maximized Tamil Bible\Maximized Tamil Bible\obj\Debug\Maximized Tamil Bible.vbproj.GenerateResource.Cache
+C:\Users\GamerD\Documents\Visual Studio 2012\Projects\Maximized Tamil Bible\Maximized Tamil Bible\obj\Debug\Maximized Tamil Bible v3.0.exe.manifest
+C:\Users\GamerD\Documents\Visual Studio 2012\Projects\Maximized Tamil Bible\Maximized Tamil Bible\obj\Debug\Maximized Tamil Bible v3.0.application
+C:\Users\GamerD\Documents\Visual Studio 2012\Projects\Maximized Tamil Bible\Maximized Tamil Bible\obj\Debug\Maximized Tamil Bible v3.0.exe
+C:\Users\GamerD\Documents\Visual Studio 2012\Projects\Maximized Tamil Bible\Maximized Tamil Bible\obj\Debug\Maximized Tamil Bible v3.0.xml
+C:\Users\GamerD\Documents\Visual Studio 2012\Projects\Maximized Tamil Bible\Maximized Tamil Bible\obj\Debug\Maximized Tamil Bible v3.0.pdb
+H:\Evergreen-Data\REPOSITORY\Visual Basic\Maximized Tamil Bible\Maximized Tamil Bible\obj\Debug\Maximized Tamil Bible v3.0.exe
+H:\Evergreen-Data\REPOSITORY\Visual Basic\Maximized Tamil Bible\Maximized Tamil Bible\obj\Debug\Maximized Tamil Bible v3.0.xml
+H:\Evergreen-Data\REPOSITORY\Visual Basic\Maximized Tamil Bible\Maximized Tamil Bible\obj\Debug\Maximized Tamil Bible v3.0.pdb

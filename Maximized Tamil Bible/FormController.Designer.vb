@@ -43,26 +43,19 @@ Partial Class FormController
         Me.NumericUpDownZoom = New System.Windows.Forms.NumericUpDown()
         Me.ListBoxBookmark = New System.Windows.Forms.ListBox()
         Me.ButtonAddBookmark = New System.Windows.Forms.Button()
-        Me.ButtonGoBookmark = New System.Windows.Forms.Button()
         Me.ButtonDeleteBookmark = New System.Windows.Forms.Button()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.ListBoxSession = New System.Windows.Forms.ListBox()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.ButtonSaveSession = New System.Windows.Forms.Button()
         Me.ButtonSaveConfig = New System.Windows.Forms.Button()
-        Me.ButtonLoadDefaultConfig = New System.Windows.Forms.Button()
         Me.ButtonHelp = New System.Windows.Forms.Button()
-        Me.ComboBoxConfigs = New System.Windows.Forms.ComboBox()
         Me.ButtonLoadConfig = New System.Windows.Forms.Button()
         Me.ButtonLoadSession = New System.Windows.Forms.Button()
         Me.ComboBoxSessions = New System.Windows.Forms.ComboBox()
         Me.TextBoxSession = New System.Windows.Forms.TextBox()
         Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.TextBoxConfig = New System.Windows.Forms.TextBox()
         Me.ButtonNewSession = New System.Windows.Forms.Button()
-        Me.RichTextBoxSample = New System.Windows.Forms.RichTextBox()
-        Me.ButtonDeleteConfig = New System.Windows.Forms.Button()
         Me.ButtonDeleteSession = New System.Windows.Forms.Button()
         Me.ButtonAbout = New System.Windows.Forms.Button()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -81,8 +74,9 @@ Partial Class FormController
         Me.CheckBoxFreezeSession = New System.Windows.Forms.CheckBox()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
-        Me.Label17 = New System.Windows.Forms.Label()
         Me.TabPage5 = New System.Windows.Forms.TabPage()
+        Me.RichTextBoxFindResults = New System.Windows.Forms.RichTextBox()
+        Me.Label20 = New System.Windows.Forms.Label()
         Me.TabPage6 = New System.Windows.Forms.TabPage()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.TabPage7 = New System.Windows.Forms.TabPage()
@@ -90,9 +84,7 @@ Partial Class FormController
         Me.Label18 = New System.Windows.Forms.Label()
         Me.LabelStatus = New System.Windows.Forms.Label()
         Me.CheckBoxFirstChapterSetter = New System.Windows.Forms.CheckBox()
-        Me.Label19 = New System.Windows.Forms.Label()
-        Me.Label20 = New System.Windows.Forms.Label()
-        Me.RichTextBoxFindResults = New System.Windows.Forms.RichTextBox()
+        Me.Label15 = New System.Windows.Forms.Label()
         CType(Me.NumericUpDownBook, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDownVerse, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDownChapter, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -116,7 +108,7 @@ Partial Class FormController
         Me.ListBoxOt1.Location = New System.Drawing.Point(4, 27)
         Me.ListBoxOt1.Name = "ListBoxOt1"
         Me.ListBoxOt1.Size = New System.Drawing.Size(132, 244)
-        Me.ListBoxOt1.TabIndex = 0
+        Me.ListBoxOt1.TabIndex = 28
         '
         'ListBoxOt2
         '
@@ -127,7 +119,7 @@ Partial Class FormController
         Me.ListBoxOt2.Location = New System.Drawing.Point(137, 27)
         Me.ListBoxOt2.Name = "ListBoxOt2"
         Me.ListBoxOt2.Size = New System.Drawing.Size(133, 244)
-        Me.ListBoxOt2.TabIndex = 1
+        Me.ListBoxOt2.TabIndex = 29
         '
         'ListBoxNt1
         '
@@ -138,7 +130,7 @@ Partial Class FormController
         Me.ListBoxNt1.Location = New System.Drawing.Point(271, 27)
         Me.ListBoxNt1.Name = "ListBoxNt1"
         Me.ListBoxNt1.Size = New System.Drawing.Size(133, 172)
-        Me.ListBoxNt1.TabIndex = 2
+        Me.ListBoxNt1.TabIndex = 30
         '
         'ListBoxNt2
         '
@@ -149,7 +141,7 @@ Partial Class FormController
         Me.ListBoxNt2.Location = New System.Drawing.Point(405, 27)
         Me.ListBoxNt2.Name = "ListBoxNt2"
         Me.ListBoxNt2.Size = New System.Drawing.Size(133, 172)
-        Me.ListBoxNt2.TabIndex = 3
+        Me.ListBoxNt2.TabIndex = 31
         '
         'Label1
         '
@@ -176,7 +168,7 @@ Partial Class FormController
         Me.ButtonGo.Location = New System.Drawing.Point(468, 201)
         Me.ButtonGo.Name = "ButtonGo"
         Me.ButtonGo.Size = New System.Drawing.Size(59, 45)
-        Me.ButtonGo.TabIndex = 31
+        Me.ButtonGo.TabIndex = 5
         Me.ButtonGo.Text = "Go"
         Me.ButtonGo.UseVisualStyleBackColor = True
         '
@@ -194,7 +186,7 @@ Partial Class FormController
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(6, 16)
+        Me.Label4.Location = New System.Drawing.Point(76, 11)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(146, 15)
         Me.Label4.TabIndex = 22
@@ -204,25 +196,31 @@ Partial Class FormController
         '
         Me.NumericUpDownBook.Location = New System.Drawing.Point(285, 215)
         Me.NumericUpDownBook.Maximum = New Decimal(New Integer() {66, 0, 0, 0})
+        Me.NumericUpDownBook.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.NumericUpDownBook.Name = "NumericUpDownBook"
         Me.NumericUpDownBook.Size = New System.Drawing.Size(54, 20)
-        Me.NumericUpDownBook.TabIndex = 28
+        Me.NumericUpDownBook.TabIndex = 0
+        Me.NumericUpDownBook.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
         'NumericUpDownVerse
         '
         Me.NumericUpDownVerse.Location = New System.Drawing.Point(408, 215)
         Me.NumericUpDownVerse.Maximum = New Decimal(New Integer() {176, 0, 0, 0})
+        Me.NumericUpDownVerse.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.NumericUpDownVerse.Name = "NumericUpDownVerse"
         Me.NumericUpDownVerse.Size = New System.Drawing.Size(54, 20)
-        Me.NumericUpDownVerse.TabIndex = 30
+        Me.NumericUpDownVerse.TabIndex = 3
+        Me.NumericUpDownVerse.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
         'NumericUpDownChapter
         '
         Me.NumericUpDownChapter.Location = New System.Drawing.Point(345, 215)
         Me.NumericUpDownChapter.Maximum = New Decimal(New Integer() {150, 0, 0, 0})
+        Me.NumericUpDownChapter.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.NumericUpDownChapter.Name = "NumericUpDownChapter"
         Me.NumericUpDownChapter.Size = New System.Drawing.Size(54, 20)
-        Me.NumericUpDownChapter.TabIndex = 29
+        Me.NumericUpDownChapter.TabIndex = 1
+        Me.NumericUpDownChapter.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
         'Label8
         '
@@ -286,13 +284,13 @@ Partial Class FormController
         '
         'NumericUpDownZoom
         '
-        Me.NumericUpDownZoom.Location = New System.Drawing.Point(156, 15)
-        Me.NumericUpDownZoom.Maximum = New Decimal(New Integer() {72, 0, 0, 0})
-        Me.NumericUpDownZoom.Minimum = New Decimal(New Integer() {6, 0, 0, 0})
+        Me.NumericUpDownZoom.Location = New System.Drawing.Point(226, 10)
+        Me.NumericUpDownZoom.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.NumericUpDownZoom.Minimum = New Decimal(New Integer() {10, 0, 0, 0})
         Me.NumericUpDownZoom.Name = "NumericUpDownZoom"
         Me.NumericUpDownZoom.Size = New System.Drawing.Size(54, 20)
         Me.NumericUpDownZoom.TabIndex = 37
-        Me.NumericUpDownZoom.Value = New Decimal(New Integer() {35, 0, 0, 0})
+        Me.NumericUpDownZoom.Value = New Decimal(New Integer() {40, 0, 0, 0})
         '
         'ListBoxBookmark
         '
@@ -315,20 +313,10 @@ Partial Class FormController
         Me.ButtonAddBookmark.Text = "Bookmark current verse"
         Me.ButtonAddBookmark.UseVisualStyleBackColor = True
         '
-        'ButtonGoBookmark
-        '
-        Me.ButtonGoBookmark.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonGoBookmark.Location = New System.Drawing.Point(327, 52)
-        Me.ButtonGoBookmark.Name = "ButtonGoBookmark"
-        Me.ButtonGoBookmark.Size = New System.Drawing.Size(72, 40)
-        Me.ButtonGoBookmark.TabIndex = 41
-        Me.ButtonGoBookmark.Text = "Go to bookmark"
-        Me.ButtonGoBookmark.UseVisualStyleBackColor = True
-        '
         'ButtonDeleteBookmark
         '
         Me.ButtonDeleteBookmark.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonDeleteBookmark.Location = New System.Drawing.Point(327, 98)
+        Me.ButtonDeleteBookmark.Location = New System.Drawing.Point(327, 52)
         Me.ButtonDeleteBookmark.Name = "ButtonDeleteBookmark"
         Me.ButtonDeleteBookmark.Size = New System.Drawing.Size(72, 40)
         Me.ButtonDeleteBookmark.TabIndex = 42
@@ -339,14 +327,15 @@ Partial Class FormController
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(216, 16)
+        Me.Label11.Location = New System.Drawing.Point(286, 11)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(40, 15)
+        Me.Label11.Size = New System.Drawing.Size(54, 15)
         Me.Label11.TabIndex = 43
-        Me.Label11.Text = "(6-72)"
+        Me.Label11.Text = "(10-200)"
         '
         'ListBoxSession
         '
+        Me.ListBoxSession.Cursor = System.Windows.Forms.Cursors.Default
         Me.ListBoxSession.Font = New System.Drawing.Font("Tamil Bible", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ListBoxSession.FormattingEnabled = True
         Me.ListBoxSession.ItemHeight = 12
@@ -378,24 +367,13 @@ Partial Class FormController
         '
         'ButtonSaveConfig
         '
-        Me.ButtonSaveConfig.Enabled = False
         Me.ButtonSaveConfig.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonSaveConfig.Location = New System.Drawing.Point(227, 12)
+        Me.ButtonSaveConfig.Location = New System.Drawing.Point(144, 32)
         Me.ButtonSaveConfig.Name = "ButtonSaveConfig"
-        Me.ButtonSaveConfig.Size = New System.Drawing.Size(56, 27)
+        Me.ButtonSaveConfig.Size = New System.Drawing.Size(118, 27)
         Me.ButtonSaveConfig.TabIndex = 47
-        Me.ButtonSaveConfig.Text = "Save"
+        Me.ButtonSaveConfig.Text = "Save layout config"
         Me.ButtonSaveConfig.UseVisualStyleBackColor = True
-        '
-        'ButtonLoadDefaultConfig
-        '
-        Me.ButtonLoadDefaultConfig.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonLoadDefaultConfig.Location = New System.Drawing.Point(289, 12)
-        Me.ButtonLoadDefaultConfig.Name = "ButtonLoadDefaultConfig"
-        Me.ButtonLoadDefaultConfig.Size = New System.Drawing.Size(118, 27)
-        Me.ButtonLoadDefaultConfig.TabIndex = 48
-        Me.ButtonLoadDefaultConfig.Text = "Load default config"
-        Me.ButtonLoadDefaultConfig.UseVisualStyleBackColor = True
         '
         'ButtonHelp
         '
@@ -406,22 +384,14 @@ Partial Class FormController
         Me.ButtonHelp.Text = "Help"
         Me.ButtonHelp.UseVisualStyleBackColor = True
         '
-        'ComboBoxConfigs
-        '
-        Me.ComboBoxConfigs.FormattingEnabled = True
-        Me.ComboBoxConfigs.Location = New System.Drawing.Point(120, 54)
-        Me.ComboBoxConfigs.Name = "ComboBoxConfigs"
-        Me.ComboBoxConfigs.Size = New System.Drawing.Size(100, 21)
-        Me.ComboBoxConfigs.TabIndex = 50
-        '
         'ButtonLoadConfig
         '
         Me.ButtonLoadConfig.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonLoadConfig.Location = New System.Drawing.Point(227, 51)
+        Me.ButtonLoadConfig.Location = New System.Drawing.Point(144, 65)
         Me.ButtonLoadConfig.Name = "ButtonLoadConfig"
-        Me.ButtonLoadConfig.Size = New System.Drawing.Size(56, 27)
+        Me.ButtonLoadConfig.Size = New System.Drawing.Size(118, 27)
         Me.ButtonLoadConfig.TabIndex = 52
-        Me.ButtonLoadConfig.Text = "Load"
+        Me.ButtonLoadConfig.Text = "Load layout config"
         Me.ButtonLoadConfig.UseVisualStyleBackColor = True
         '
         'ButtonLoadSession
@@ -459,23 +429,6 @@ Partial Class FormController
         Me.Label14.TabIndex = 57
         Me.Label14.Text = "Session Name:"
         '
-        'Label15
-        '
-        Me.Label15.AutoSize = True
-        Me.Label15.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(11, 17)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(82, 15)
-        Me.Label15.TabIndex = 59
-        Me.Label15.Text = "Config Name:"
-        '
-        'TextBoxConfig
-        '
-        Me.TextBoxConfig.Location = New System.Drawing.Point(120, 15)
-        Me.TextBoxConfig.Name = "TextBoxConfig"
-        Me.TextBoxConfig.Size = New System.Drawing.Size(100, 20)
-        Me.TextBoxConfig.TabIndex = 58
-        '
         'ButtonNewSession
         '
         Me.ButtonNewSession.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -485,27 +438,6 @@ Partial Class FormController
         Me.ButtonNewSession.TabIndex = 61
         Me.ButtonNewSession.Text = "New Session"
         Me.ButtonNewSession.UseVisualStyleBackColor = True
-        '
-        'RichTextBoxSample
-        '
-        Me.RichTextBoxSample.Enabled = False
-        Me.RichTextBoxSample.Font = New System.Drawing.Font("Tamil Bible", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RichTextBoxSample.Location = New System.Drawing.Point(9, 58)
-        Me.RichTextBoxSample.Name = "RichTextBoxSample"
-        Me.RichTextBoxSample.Size = New System.Drawing.Size(405, 166)
-        Me.RichTextBoxSample.TabIndex = 62
-        Me.RichTextBoxSample.Text = "  1. mth; jpushd [dq;fisf; fz;L kiyapd;Nky; Vwpdhh;@ mth; cl;fhh;e;jnghOJ> mtUila" & _
-    " rP\h;fs; mthplj;jpy; te;jhh;fs;." & Global.Microsoft.VisualBasic.ChrW(10)
-        '
-        'ButtonDeleteConfig
-        '
-        Me.ButtonDeleteConfig.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonDeleteConfig.Location = New System.Drawing.Point(289, 51)
-        Me.ButtonDeleteConfig.Name = "ButtonDeleteConfig"
-        Me.ButtonDeleteConfig.Size = New System.Drawing.Size(56, 27)
-        Me.ButtonDeleteConfig.TabIndex = 65
-        Me.ButtonDeleteConfig.Text = "Delete"
-        Me.ButtonDeleteConfig.UseVisualStyleBackColor = True
         '
         'ButtonDeleteSession
         '
@@ -634,7 +566,6 @@ Partial Class FormController
         Me.TabPage1.Controls.Add(Me.ListBoxBookmark)
         Me.TabPage1.Controls.Add(Me.ButtonDeleteBookmark)
         Me.TabPage1.Controls.Add(Me.ButtonAddBookmark)
-        Me.TabPage1.Controls.Add(Me.ButtonGoBookmark)
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
@@ -687,8 +618,7 @@ Partial Class FormController
         'TabPage3
         '
         Me.TabPage3.BackColor = System.Drawing.Color.AliceBlue
-        Me.TabPage3.Controls.Add(Me.Label19)
-        Me.TabPage3.Controls.Add(Me.RichTextBoxSample)
+        Me.TabPage3.Controls.Add(Me.Label15)
         Me.TabPage3.Controls.Add(Me.Label11)
         Me.TabPage3.Controls.Add(Me.Label4)
         Me.TabPage3.Controls.Add(Me.NumericUpDownZoom)
@@ -702,30 +632,14 @@ Partial Class FormController
         'TabPage4
         '
         Me.TabPage4.BackColor = System.Drawing.Color.AliceBlue
-        Me.TabPage4.Controls.Add(Me.Label17)
-        Me.TabPage4.Controls.Add(Me.ButtonLoadDefaultConfig)
         Me.TabPage4.Controls.Add(Me.ButtonSaveConfig)
-        Me.TabPage4.Controls.Add(Me.ButtonDeleteConfig)
-        Me.TabPage4.Controls.Add(Me.ComboBoxConfigs)
-        Me.TabPage4.Controls.Add(Me.Label15)
         Me.TabPage4.Controls.Add(Me.ButtonLoadConfig)
-        Me.TabPage4.Controls.Add(Me.TextBoxConfig)
         Me.TabPage4.Location = New System.Drawing.Point(4, 22)
         Me.TabPage4.Name = "TabPage4"
         Me.TabPage4.Padding = New System.Windows.Forms.Padding(3)
         Me.TabPage4.Size = New System.Drawing.Size(430, 239)
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "Config"
-        '
-        'Label17
-        '
-        Me.Label17.AutoSize = True
-        Me.Label17.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.Location = New System.Drawing.Point(11, 56)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(106, 15)
-        Me.Label17.TabIndex = 66
-        Me.Label17.Text = "Available Configs:"
         '
         'TabPage5
         '
@@ -741,6 +655,25 @@ Partial Class FormController
         Me.TabPage5.Size = New System.Drawing.Size(430, 239)
         Me.TabPage5.TabIndex = 4
         Me.TabPage5.Text = "Find"
+        '
+        'RichTextBoxFindResults
+        '
+        Me.RichTextBoxFindResults.Font = New System.Drawing.Font("Tamil Bible", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RichTextBoxFindResults.Location = New System.Drawing.Point(9, 59)
+        Me.RichTextBoxFindResults.Name = "RichTextBoxFindResults"
+        Me.RichTextBoxFindResults.Size = New System.Drawing.Size(402, 176)
+        Me.RichTextBoxFindResults.TabIndex = 85
+        Me.RichTextBoxFindResults.Text = ""
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label20.Location = New System.Drawing.Point(6, 42)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(264, 15)
+        Me.Label20.TabIndex = 78
+        Me.Label20.Text = "Note: Only one instance per verse will be found."
         '
         'TabPage6
         '
@@ -808,34 +741,15 @@ Partial Class FormController
         Me.CheckBoxFirstChapterSetter.Text = "Select first chapter of a book as default"
         Me.CheckBoxFirstChapterSetter.UseVisualStyleBackColor = True
         '
-        'Label19
+        'Label15
         '
-        Me.Label19.AutoSize = True
-        Me.Label19.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label19.Location = New System.Drawing.Point(6, 42)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(54, 15)
-        Me.Label19.TabIndex = 63
-        Me.Label19.Text = "Preview:"
-        '
-        'Label20
-        '
-        Me.Label20.AutoSize = True
-        Me.Label20.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label20.Location = New System.Drawing.Point(6, 42)
-        Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(264, 15)
-        Me.Label20.TabIndex = 78
-        Me.Label20.Text = "Note: Only one instance per verse will be found."
-        '
-        'RichTextBoxFindResults
-        '
-        Me.RichTextBoxFindResults.Font = New System.Drawing.Font("Tamil Bible", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RichTextBoxFindResults.Location = New System.Drawing.Point(9, 59)
-        Me.RichTextBoxFindResults.Name = "RichTextBoxFindResults"
-        Me.RichTextBoxFindResults.Size = New System.Drawing.Size(402, 176)
-        Me.RichTextBoxFindResults.TabIndex = 85
-        Me.RichTextBoxFindResults.Text = ""
+        Me.Label15.AutoSize = True
+        Me.Label15.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.Location = New System.Drawing.Point(51, 42)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(321, 15)
+        Me.Label15.TabIndex = 44
+        Me.Label15.Text = "Note: Changes get reflected the next time a verse is opened"
         '
         'FormController
         '
@@ -891,7 +805,6 @@ Partial Class FormController
         Me.TabPage3.ResumeLayout(False)
         Me.TabPage3.PerformLayout()
         Me.TabPage4.ResumeLayout(False)
-        Me.TabPage4.PerformLayout()
         Me.TabPage5.ResumeLayout(False)
         Me.TabPage5.PerformLayout()
         Me.TabPage6.ResumeLayout(False)
@@ -921,25 +834,19 @@ Partial Class FormController
     Friend WithEvents NumericUpDownZoom As System.Windows.Forms.NumericUpDown
     Friend WithEvents ListBoxBookmark As System.Windows.Forms.ListBox
     Friend WithEvents ButtonAddBookmark As System.Windows.Forms.Button
-    Friend WithEvents ButtonGoBookmark As System.Windows.Forms.Button
     Friend WithEvents ButtonDeleteBookmark As System.Windows.Forms.Button
     Friend WithEvents Label11 As System.Windows.Forms.Label
     Friend WithEvents ListBoxSession As System.Windows.Forms.ListBox
     Friend WithEvents Label13 As System.Windows.Forms.Label
     Friend WithEvents ButtonSaveSession As System.Windows.Forms.Button
     Friend WithEvents ButtonSaveConfig As System.Windows.Forms.Button
-    Friend WithEvents ButtonLoadDefaultConfig As System.Windows.Forms.Button
     Friend WithEvents ButtonHelp As System.Windows.Forms.Button
-    Friend WithEvents ComboBoxConfigs As System.Windows.Forms.ComboBox
     Friend WithEvents ButtonLoadConfig As System.Windows.Forms.Button
     Friend WithEvents ButtonLoadSession As System.Windows.Forms.Button
     Friend WithEvents ComboBoxSessions As System.Windows.Forms.ComboBox
     Friend WithEvents TextBoxSession As System.Windows.Forms.TextBox
     Friend WithEvents Label14 As System.Windows.Forms.Label
-    Friend WithEvents Label15 As System.Windows.Forms.Label
-    Friend WithEvents TextBoxConfig As System.Windows.Forms.TextBox
     Friend WithEvents ButtonNewSession As System.Windows.Forms.Button
-    Friend WithEvents RichTextBoxSample As System.Windows.Forms.RichTextBox
     Friend WithEvents ButtonDeleteConfig As System.Windows.Forms.Button
     Friend WithEvents ButtonDeleteSession As System.Windows.Forms.Button
     Friend WithEvents ButtonAbout As System.Windows.Forms.Button
@@ -963,13 +870,11 @@ Partial Class FormController
     Friend WithEvents RichTextBoxDummy As System.Windows.Forms.RichTextBox
     Friend WithEvents CheckBoxFreezeSession As System.Windows.Forms.CheckBox
     Friend WithEvents Label12 As System.Windows.Forms.Label
-    Friend WithEvents Label17 As System.Windows.Forms.Label
     Friend WithEvents RichTextBox1 As System.Windows.Forms.RichTextBox
     Friend WithEvents Label18 As System.Windows.Forms.Label
     Friend WithEvents LabelStatus As System.Windows.Forms.Label
     Friend WithEvents CheckBoxFirstChapterSetter As System.Windows.Forms.CheckBox
-    Friend WithEvents Label19 As System.Windows.Forms.Label
     Friend WithEvents Label20 As System.Windows.Forms.Label
     Friend WithEvents RichTextBoxFindResults As System.Windows.Forms.RichTextBox
-
+    Friend WithEvents Label15 As Label
 End Class

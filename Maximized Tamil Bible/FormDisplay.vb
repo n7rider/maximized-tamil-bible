@@ -6,4 +6,5 @@
         RichTextBox1.Width = Me.Width - 25
         RichTextBox1.Height = Me.Height - 50
     End Sub
+
 End Class
